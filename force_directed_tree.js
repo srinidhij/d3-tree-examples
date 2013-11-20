@@ -13,7 +13,7 @@ var svg = d3.select("body").append("svg:svg")
     .attr("width", w)
     .attr("height", h);
 
-d3.json("graph.json", function(json) {
+d3.json("graph_force.json", function(json) {
   var link = svg.selectAll("line")
       .data(json.links)
     .enter().append("svg:line");
